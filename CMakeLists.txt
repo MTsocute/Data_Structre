@@ -2,14 +2,17 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
 
 PROJECT(DataStructure)
 
-
+# 设置 C++ 标准版本
+set(CMAKE_CXX_STANDARD 17)  # 例如，设置为 C++17
 
 ## Algorithm
 #add_executable(binary_search 算法/查找/二分查找.cpp)
 #add_executable(choose_sort 算法/排序/选择排序.cpp)
 #add_executable(recursive 算法/递归.cpp)
 #add_executable(quick_sort 算法/排序/快速排序.cpp)
-#
+# 查找
+add_executable(fibonacci_search
+        算法/查找/斐波那契查找.cpp)
 #
 ## Data Structure
 #
