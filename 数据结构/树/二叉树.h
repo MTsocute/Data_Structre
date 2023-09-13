@@ -10,7 +10,7 @@
 static const char END = '#';
 
 struct TreeNode {
-    TreeNode data;
+    int data;
     TreeNode* left;
     TreeNode* right;
 };
