@@ -257,8 +257,7 @@ Edge *kruskal_MST(Edge *edgeLists) {
             MST[edge_num++] = edgeLists[i];  // 把边存入最小树
 
             // 边的个数为顶点-1时，就是最小树生成的时候
-            if (edge_num == vertex_num - 1)
-                return MST;
+            if (edge_num == vertex_num - 1) return MST;
         }
     }
     return nullptr;

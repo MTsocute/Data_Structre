@@ -167,9 +167,6 @@ void dijkstra(MGraph &g, int src);
 
 void printShortestPaths(MGraph &g, int adjVex[], int src);
 
-
-void printShortestPathMatrix(const int (*dist)[vertex_num]);
-
 /**
  * @brief 弗洛伊德最短路径算法实现
  * */

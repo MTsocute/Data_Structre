@@ -23,6 +23,5 @@ int main() {
     in_order_traversal(root);
     std::cout << std::endl;
 
-
     return 0;
 }
