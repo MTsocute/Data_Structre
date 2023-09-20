@@ -6,14 +6,31 @@ PROJECT(DataStructure)
 set(CMAKE_CXX_STANDARD 17)  # 例如，设置为 C++17
 
 ## Algorithm
-#add_executable(binary_search 算法/查找/二分查找.cpp)
-#add_executable(choose_sort 算法/排序/选择排序.cpp)
 #add_executable(recursive 算法/递归.cpp)
+
+# 排序
+#add_executable(choose_sort 算法/排序/选择排序.cpp)
 #add_executable(quick_sort 算法/排序/快速排序.cpp)
+add_executable(bubble_sort
+        算法/排序/冒泡排序.cpp)
+add_executable(choose_sort
+        算法/排序/简单选择排序.cpp)
+add_executable(insert_sort
+        算法/排序/直接插入排序.cpp)
+add_executable(shell_sort
+        算法/排序/希尔排序.cpp)
+add_executable(heap_sort
+        算法/排序/堆排序.cpp)
+add_executable(merge_sort
+        算法/排序/并归排序.cpp)
+
 # 查找
+#add_executable(binary_search 算法/查找/二分查找.cpp)
 add_executable(fibonacci_search
         算法/查找/斐波那契查找.cpp)
-#
+add_executable(bin_sort_tree
+        算法/查找/二叉排序树.cpp
+        算法/查找/二叉排序树.h)
 ## Data Structure
 #
 ## 链表
@@ -62,17 +79,17 @@ add_executable(fibonacci_search
 #add_executable(Haffman_Tree 数据结构/树/哈夫曼树.cpp 数据结构/树/哈夫曼树.h)
 
 # 图
-add_subdirectory(./数据结构/图)
+#add_subdirectory(./数据结构/图)
 
-add_executable(graph 数据结构/图/main.cpp)
+#add_executable(graph 数据结构/图/main.cpp)
 
-target_link_libraries(graph PUBLIC adjacency_matrix)
+#target_link_libraries(graph PUBLIC adjacency_matrix)
 #target_link_libraries(graph PUBLIC AdjacencyList)
-target_link_libraries(graph PUBLIC AOV)
+#target_link_libraries(graph PUBLIC AOV)
 #target_link_libraries(graph PUBLIC crossing_linked_list)
 #target_link_libraries(graph PUBLIC multi_adjacency_list)
 
-target_include_directories(adjacency_matrix PUBLIC
-        "${CMAKE_SOURCE_DIR}/数据结构/图")
+#target_include_directories(adjacency_matrix PUBLIC
+#        "${CMAKE_SOURCE_DIR}/数据结构/图")
 
 # message(STATUS main-- "${CMAKE_SOURCE_DIR}/数据结构/图/")
